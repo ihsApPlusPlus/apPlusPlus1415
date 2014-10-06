@@ -44,23 +44,23 @@ ClearMem
 	STA COLUP1
 
 	LDA #0
-	STA GameOverBool
+	STA GameOverBool;booleans to keep track of things
 	STA WallCollisionBool
 	STA WallDirectionBool
 
 	LDA #2
-	STA ENAM1
+	STA ENAM1;enables missle 1
 	
-	LDA #25
+	LDA #25;part of the timer
 	STA TimeComp0
 	STA TimeComp1
 	
-	LDA #16
+	LDA #16;player height and leveling
 	STA PlayerHeight
 	LDA #1
 	STA LevelingBol
 	
-	LDA #90
+	LDA #90;initial player position
 	STA YPosForPlay
 	
 	LDA #%00000000
@@ -99,7 +99,7 @@ ClearMem
 ;VSYNC time
 MainLoop
 	
-	LDA  #2
+	LDA  #2;initial syncs
 	STA  VSYNC	
 	STA  WSYNC	
 	STA  WSYNC 	
@@ -110,7 +110,7 @@ MainLoop
 	STA  VSYNC 	
 	
 
-LevelingTimer
+LevelingTimer;timer for leveling
 	LDA TimeComp0
 	BEQ Timer2
 	DEC TimeComp0
@@ -142,7 +142,7 @@ BallDifficulty
 	LDA #2
 	STA LevelingBol
 	DEC BallSpeed
-PlayerBoundary
+PlayerBoundary;checks when player hits wall
 	LDA #%10000000
 	BIT CXP0FB
 	BEQ PlayerMovement
@@ -151,10 +151,10 @@ PlayerBoundary
 	INC YPosForPlay
 	INC YPosForPlay
 	JMP PlayerMovement
-MoveDown
+MoveDown;for when player needs to be offset
 	DEC YPosForPlay
 	DEC YPosForPlay
-PlayerMovement
+PlayerMovement;player movement up and down
 	LDA #%00100000;down
 	BIT SWCHA
 	BNE NotDown
@@ -181,7 +181,7 @@ SkipMove
 	STA HMP0	;set the move for player 0
 	LDA #37
 	JMP CheckCollision
-SkipMoveUp
+SkipMoveUp;player offsets
 	INC YPosForPlay
 	INC YPosForPlay
 	INC YPosForPlay
@@ -220,7 +220,7 @@ CheckBallCol;ball and player
 	STA WallDirectionBool
 	LDA #%00010000
 	STA HMBL
-BallVert
+BallVert;checks which direction o move ball verticaly
 	LDA #%10000000
 	BIT CXBLPF
 	BEQ CheckBallMove
@@ -237,7 +237,7 @@ BallDown
 	;DEC YPosForBall
 	LDA #1
 	STA BallDirection
-CheckBallMove
+CheckBallMove;frame check
 	LDA BallFrame
 	BEQ BallMoveVert
 	DEC BallFrame
@@ -256,10 +256,10 @@ Up
 Down
 	DEC YPosForBall
 	JMP WaitForVblankEnd
-GameOverStart
+GameOverStart;checks if youve lost
 	LDA #1
 	STA GameOverBool
-WaitForVblankEnd
+WaitForVblankEnd;waits for the end of verical blank time
 	STA CXCLR;clears joystick
 	LDA INTIM	
 	BNE WaitForVblankEnd	
@@ -274,18 +274,18 @@ WaitForVblankEnd
 	DEC BallFrame
 	STA WSYNC
 	JMP ScanLoop
-BallMove
+BallMove;ball frame check
 	LDA BallSpeed
 	STA BallFrame
 	STA WSYNC
 	STA HMOVE 	
 
 ;main scanline loop...
-ScanLoop 
+ScanLoop ;start of the scan loop aka the kernel...
 	LDA GameOverBool
 	BNE GameOver
 	
-	STA WSYNC 	
+	STA WSYNC 	;syncs buffers
 	LDA PlayerBuffer
 	STA GRP0
 	LDA BallBuffer
@@ -319,7 +319,6 @@ KernelPt2
 StartPlayer
 	LDA #0
 	STA PlayerBuffer
-	;JMP FinishPlayer
 CheckActivatePlayer
 	CPY YPosForPlay
 	BEQ ActivatePlayer
@@ -333,7 +332,7 @@ SkipActivatePlayer
 	LDA VisiblePlayerLine	;check the visible player line...
 	BEQ FinishPlayer		;skip the drawing if its zero...
 IsPlayerOn	
-	;LDA PlayerGraphic-1,X	;otherwise, load the correct line from player graphic
+	;LDA PlayerGraphic-1,X	;otherwise, load the correct line from player graphic;unused graphic code
 				;section below... it's off by 1 though, since at zero
 				;we stop drawing
 	LDA #%11111111
@@ -368,7 +367,7 @@ FinishBall
 	BNE ScanLoop	;lather rinse repeat
 	JMP EndScanLoop
 	
-GameOver
+GameOver;game over kernel
 	STA WSYNC 
 	LDA #0
 	STA ENABL
@@ -417,7 +416,7 @@ OverScanWait
 	JMP  MainLoop      
 	
 	
-GGraphic
+GGraphic;player graphic
 	.byte #%11000110
 	.byte #%11001100
 	.byte #%11011000
