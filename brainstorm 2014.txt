@@ -1,0 +1,28 @@
+Project ideas:
+	Games, games, omg games (need specialization)
+	Quiz generator
+	Chat client/server
+	Web apps (need details)
+	Reimplementing projects in new language
+
+Lecture topics:
+	Networking
+	Graphics....
+	Data structures (trees, dictionaries, ...)
+	Compilers/Dev tools
+	AI/Machine Learning
+	Security
+	Cryptography
+	Theory of Computation
+	Operating Systems/Architecture
+	UML/Design patterns
+	Games...
+	Hardware/EE
+	Cloud computing
+	Databases
+	Data recovery
+	XML
+	Git
+	Generics/Language Concepts (dynamic/static types)
+	Functional languages
+	Multi-threading
