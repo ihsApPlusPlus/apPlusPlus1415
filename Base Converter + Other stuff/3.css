@@ -1,0 +1,25 @@
+body {
+	background-color: #FFFFFF;
+}
+h1 {
+    text-align: center;
+}
+.a {
+    background-color: purple;
+    margin: 0px -310px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+    font-size: 400%;
+}
+button {
+	font-size: 40px;
+	background-color: black;
+	color: white;
+}
+p.words {
+	font-size: 40px;
+}
+p.counter {
+	font-size: 40px;
+}
