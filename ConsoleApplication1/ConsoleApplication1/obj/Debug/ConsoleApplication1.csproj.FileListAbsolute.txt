@@ -1,0 +1,19 @@
+c:\users\meltmck15\documents\visual studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+c:\users\meltmck15\documents\visual studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Users\meltmck15\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.ResolveComReference.cache
+E:\Senior Year 12\COMP SCI ++\REAL\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+E:\Senior Year 12\COMP SCI ++\REAL\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.ResolveComReference.cache
+H:\Senior Year 12\COMP SCI ++\REAL\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+H:\Senior Year 12\COMP SCI ++\REAL\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.ResolveComReference.cache
+H:\Senior Year 12\COMP SCI ++\REAL\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+H:\Senior Year 12\COMP SCI ++\REAL\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+H:\Senior Year 12\COMP SCI ++\REAL\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+H:\Senior Year 12\COMP SCI ++\REAL\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\microsoft.office.tools.word.v4.0.utilities.dll
+H:\Senior Year 12\COMP SCI ++\REAL\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+H:\Senior Year 12\COMP SCI ++\REAL\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+E:\Senior Year 12\COMP SCI ++\REAL\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+E:\Senior Year 12\COMP SCI ++\REAL\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+E:\Senior Year 12\COMP SCI ++\REAL\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+E:\Senior Year 12\COMP SCI ++\REAL\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+E:\Senior Year 12\COMP SCI ++\REAL\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\microsoft.office.tools.word.v4.0.utilities.dll
+E:\Senior Year 12\COMP SCI ++\REAL\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
